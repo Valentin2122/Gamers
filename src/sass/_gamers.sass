@@ -1,0 +1,31 @@
+.gamers
+    background-color: $color-blue-dark
+    grid-column: col-start 7 / full-end
+    display: grid
+    grid-template-columns: max-content
+    grid-gap: 5rem 2rem
+    align-content: center
+    justify-content: center
+    height: 60rem
+    @include respond(tab-port)
+        margin-top: 0
+        grid-column: 1 / -1
+    @include respond(phone)
+        margin-top: 0
+
+    &__box
+        display: grid
+        grid-template-columns: max-content max-content
+        grid-column-gap: 2rem
+    &__title
+        grid-column: 1 / -1
+        justify-content: center
+    &__img
+        border-radius: 50%
+        width: 7rem
+    &__text
+        align-self: center
+    &__score
+        font-size: 1.6rem
+        color: $color-gray-dark
+        font-weight: 300
